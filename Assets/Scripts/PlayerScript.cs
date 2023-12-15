@@ -20,10 +20,10 @@ public class PlayerScript : MonoBehaviour
     private float j = 1;
     private float timer;
     private BoxCollider2D Collider;
-    private bool directionChange;
     public float gravLow;
     public float gravHigh;
     private bool jump = false;
+    public float direction;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +34,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        direction = movementVector.x;
         i += Time.fixedDeltaTime;
         j += Time.fixedDeltaTime;
         if (GroundCheck == false)
@@ -58,12 +59,7 @@ public class PlayerScript : MonoBehaviour
             {
                 if (movementVector.x > 0 || mov.x > 0)
                 {
-                    if (directionChange == true)
-                    {
-                        movementVector = new Vector2(movementVector.x + 0.2f, 0);
-                        Debug.Log("B");
-                    }
-                    else if (movementVector == new Vector2(1, 0) || movementVector == new Vector2(0.8f, 0))
+                    if (movementVector == new Vector2(1, 0) || movementVector == new Vector2(0.8f, 0))
                     {
                         movementVector = new Vector2(1, 0);
                     }
@@ -71,12 +67,7 @@ public class PlayerScript : MonoBehaviour
                 }
                 else if (movementVector.x < 0 || mov.x < 0)
                 {
-                    if(directionChange == true)
-                    {
-                        movementVector = new Vector2(movementVector.x -0.2f, 0);
-                        Debug.Log("A");
-                    }
-                    else if (movementVector == new Vector2(-1, 0) || movementVector == new Vector2(-0.8f, 0))
+                    if (movementVector == new Vector2(-1, 0) || movementVector == new Vector2(-0.8f, 0))
                     {
                         movementVector = new Vector2(-1, 0);
                     }
@@ -94,14 +85,12 @@ public class PlayerScript : MonoBehaviour
         {
             movementVector.x = movement.Get<Vector2>().x;
             mov.x = movement.Get<Vector2>().x;
-            directionChange = false;
             Debug.Log("CCCCCCCCC");
         }
         else
         {
             movementVector.x = movement.Get<Vector2>().x;
             mov.x = movement.Get<Vector2>().x;
-            directionChange = true;
         }
     }
     private void Update()

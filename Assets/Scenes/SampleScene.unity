@@ -280,7 +280,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 218054453}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -675,7 +675,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1044361277}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -805,7 +805,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1151380345}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1002,7 +1002,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1166031918}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1080,7 +1080,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1275874460}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1114,7 +1114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.91}
+  m_Size: {x: 0.9, y: 0.91}
   m_EdgeRadius: 0
 --- !u!114 &1275874463
 MonoBehaviour:
@@ -1158,7 +1158,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1563052364}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1193,7 +1193,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.99, y: 1.731706}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.02
 --- !u!50 &1563052366
 Rigidbody2D:
   serializedVersion: 4
@@ -1210,7 +1210,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0.2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccc8b071337ead14eb511bf1b1b99b58, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1343,7 +1343,7 @@ Transform:
   m_GameObject: {fileID: 1563052364}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.375338, z: 0}
+  m_LocalPosition: {x: 0, y: -3.06, z: 0}
   m_LocalScale: {x: 1.23, y: 1.23, z: 1.23}
   m_ConstrainProportionsScale: 0
   m_Children:
